@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+   <children>
+      <TableView fx:id="songTable" layoutY="-1.0" prefHeight="400.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="songName" prefWidth="147.20001220703125" text="Song Name" />
+          <TableColumn fx:id="songArtist" prefWidth="136.0" text="Song Artist" />
+        </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="328.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Add" onAction="#addSong"/>
+      <Button fx:id="edit" layoutX="417.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Edit" onAction="#editSong"/>
+      <Button fx:id="delete" layoutX="506.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Delete" onAction="#deleteSong"/>
+      <Label layoutX="328.0" layoutY="90.0" prefHeight="21.0" prefWidth="49.0" text="Name:" />
+      <Label layoutX="328.0" layoutY="134.0" text="Artist:" />
+      <Label layoutX="328.0" layoutY="182.0" text="Album:" />
+      <Label layoutX="325.0" layoutY="230.0" text="Year:" />
+      <TextField fx:id="name" layoutX="391.0" layoutY="88.0" />
+      <TextField fx:id="artist" layoutX="391.0" layoutY="130.0" />
+      <TextField fx:id="album" layoutX="391.0" layoutY="178.0" />
+      <TextField fx:id="year" layoutX="391.0" layoutY="226.0" />
+      <Button fx:id="save" layoutX="388.0" layoutY="271.0" mnemonicParsing="false" text="Save" onAction="#saveSong" />
+      <Button fx:id="cancel" layoutX="488.0" layoutY="271.0" mnemonicParsing="false" text="Cancel" onAction="#cancel"/>
+      
+   </children>
+</Pane>
